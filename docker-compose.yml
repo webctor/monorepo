@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  web-angular:
+    container_name: web-angular
+    build:
+      context: my-web/.
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/webapp'
+      - '/usr/src/webapp/node_modules'
+    ports:
+      - '4200:4200'
