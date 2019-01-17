@@ -1,0 +1,49 @@
+.mainHeader {
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-size: 155px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.highlightBlue {
+  color: cornflowerblue;
+}
+
+.highlightRed {
+  color: orange;
+}
+
+p {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+
+}
+
+.mainCentered {
+  width: 425px;
+  margin: 0 auto;
+}
+
+.mainDialog {
+  width: 425px;
+}
+
+.icon {
+  width: 50px;
+  margin: 10px;
+}
+
+.iconOver {
+  width: 60px;
+  margin: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<div class="mainCentered">
+  <div class="mainDialog">
+    <h1 class="mainHeader">
+      {{page.title | lowercase}}
+    </h1>
+  </div>
+  <div class="mainDialog">
+    <h2>
+      I am <span class="highlightBlue">{{page.name}}</span>. I am a <span class="highlightBlue">{{page.position}}</span>
+    </h2>
+  </div>
+  <div class="mainDialog">
+    <p>
+      Currently working at the <span class="highlightRed">@NASAJPL</span> developing software for space exploration. Formerly Lead Architect at <span class="highlightRed">@21CF</span> and Lead Developer at <span class="highlightRed">@WaltDisneyCo</span>.
+    </p>
+  </div>
+  <div class="mainDialog">
+    <div>
+      <img *ngFor="let icon of ICONS" [class.iconOver]="icon === overIcon" class="icon"
+           src="{{icon.source}}"
+           (click)="onClick(icon)"
+           (mouseenter)="onEnter(icon)"
+           (mouseleave)="onLeave(icon)"/>
+    </div>
+  </div>
+</div>
