@@ -1,8 +1,8 @@
 /**
  * Created by Hector R Acosta on 1/16/19.
  */
-export class Icon {
-  source: string;
+export class ContactForm {
   name: string;
-  link: string;
+  email: string;
+  message: string;
 }

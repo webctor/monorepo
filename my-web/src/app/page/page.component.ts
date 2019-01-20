@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Icon } from '../valueobjects/icon';
+import { ICONS } from '../valueobjects/mock-icons';
 
 @Component({
   selector: 'my-page',
@@ -8,18 +9,7 @@ import { Icon } from '../valueobjects/icon';
 })
 export class PageComponent implements OnInit {
 
-  ICONS: Icon[] = [
-    {
-      source: './assets/icons/github.png',
-      name: 'GitHub'
-    }, {
-      source: './assets/icons/linkedin.png',
-      name: 'LinkedIn'
-    }, {
-      source: './assets/icons/mail.png',
-      name: 'e-mail'
-    }
-  ]
+  ICONS: Icon[] = ICONS;
 
   page = {
     title: 'hello.',
@@ -33,9 +23,14 @@ export class PageComponent implements OnInit {
 
   clickedIcon: Icon;
   overIcon: Icon;
+
   onClick(icon: Icon): void {
     this.clickedIcon = icon;
-    console.log('', icon);
+    if(icon.name !== 'e-mail') {
+      window.open(icon.link, "_blank");
+    } else {
+      window.open(icon.link, "_self");
+    }
   }
 
   onEnter(icon: Icon) {

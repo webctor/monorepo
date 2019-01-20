@@ -1,0 +1,28 @@
+<div *ngIf="contactform" >
+  <form (ngSubmit)="processForm()">
+    <div fxLayout="column" fxLayoutAlign="space-around center" class="contactme">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Your name..." [(ngModel)]="contactform.name" name="name">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Your e-mail..."
+               [formControl]="emailFormControl"
+               [(ngModel)]="contactform.email"
+               name="email">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <textarea matInput placeholder="Leave a comment" [(ngModel)]="contactform.message" name="message"></textarea>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+    </div>
+  </form>
+</div>

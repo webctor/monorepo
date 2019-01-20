@@ -15,7 +15,7 @@
     </p>
   </div>
   <div class="mainDialog">
-    <div>
+    <div class="iconsholder">
       <img *ngFor="let icon of ICONS" [class.iconOver]="icon === overIcon" class="icon"
            src="{{icon.source}}"
            (click)="onClick(icon)"

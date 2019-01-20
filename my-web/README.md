@@ -27,7 +27,7 @@ I added a Dockerfile that contains the instructions to create an image for this 
 
 You build the image by running the command: 
 ```sh
-$ docker build -t
+$ docker build -t web-angular .
 ```
 
 Then, spin up the container once the build is done:
