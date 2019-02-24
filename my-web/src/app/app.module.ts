@@ -10,8 +10,9 @@ import { PageComponent } from './page/page.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { AnimationdemoComponent } from './animationdemo/animationdemo.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { CareerComponent } from './career/career.component';
+import { ThoughtsComponent } from './thoughts/thoughts.component';
 
 
 @NgModule({
@@ -19,8 +20,9 @@ import { ProjectsComponent } from './projects/projects.component';
     AppComponent,
     PageComponent,
     ContactComponent,
-    AnimationdemoComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CareerComponent,
+    ThoughtsComponent
   ],
   imports: [
     BrowserModule,
