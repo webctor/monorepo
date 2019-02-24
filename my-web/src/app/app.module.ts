@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatCheckboxModule, MatInputModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatInputModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -10,13 +10,17 @@ import { PageComponent } from './page/page.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AnimationdemoComponent } from './animationdemo/animationdemo.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageComponent,
-    ContactComponent
+    ContactComponent,
+    AnimationdemoComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     BrowserAnimationsModule,
     AppRoutingModule,
     MatButtonModule,
+    MatCardModule,
     MatCheckboxModule,
+    MatIconModule,
     MatInputModule
   ],
   providers: [],

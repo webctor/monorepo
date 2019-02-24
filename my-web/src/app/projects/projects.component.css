@@ -1,0 +1,25 @@
+.projectsCentered {
+  min-height: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project-card {
+  width: 300px;
+  height: 300px;
+  overflow-y: auto;
+  margin: 10px;
+}
+
+.mcheader {
+  min-height: 100px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.mcimage {
+  object-fit: cover; /*this makes de image in src fit to the size of specified below*/
+  height: 100px;
+}
