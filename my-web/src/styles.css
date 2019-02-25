@@ -7,12 +7,10 @@ html, body {
 }
 
 section {
-  // height: 100vh;
-  margin-top: 25px;
+  margin-top: 100px;
 }
 
 body {
-  // scroll-snap-type: y proximity;
   color: #4a4a4a;
   background-color: whitesmoke;
   font-family: 'Museosans 900', sans-serif;

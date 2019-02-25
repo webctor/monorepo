@@ -11,7 +11,25 @@
   margin: 10px;
 }
 
+.mctitle {
+  min-width: 200px;
+  text-align: left;
+}
+
+.mcsubtitle {
+  min-width: 200px;
+  text-align: left;
+}
+
+.mctitle button{
+  position: absolute;
+  float: right;
+  right: 5px;
+}
+
 .mcheader {
+  width: 100%;
+  margin: 0 10px;
   min-height: 100px;
 }
 
@@ -19,7 +37,9 @@
   background-size: cover;
 }
 
+
 .mcimage {
   object-fit: cover; /*this makes de image in src fit to the size of specified below*/
   height: 100px;
 }
+

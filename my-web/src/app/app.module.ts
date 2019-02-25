@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ProjectsComponent } from './projects/projects.component';
 import { CareerComponent } from './career/career.component';
 import { ThoughtsComponent } from './thoughts/thoughts.component';
+import { ReadMoreComponent } from './utilities/readmore/readmore.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ThoughtsComponent } from './thoughts/thoughts.component';
     ContactComponent,
     ProjectsComponent,
     CareerComponent,
-    ThoughtsComponent
+    ThoughtsComponent,
+    ReadMoreComponent
   ],
   imports: [
     BrowserModule,

@@ -34,20 +34,30 @@ export class ProjectsComponent implements OnInit {
               name: 'Mars 2020 EAS Cascade',
               company: 'NASA/Jet Propulsion Laboratory',
               avatar: 'assets/projects/avatar/m2020.png',
-              image: '',
-              description: 'The Mars 2020 mission is heavily based on MSL, better known as Curiosity. The team learned a lot from MSL\'s ground systems and the premise of the Engineering Analysis Subsystem (EAS) Team is to apply all that knowledge to how operations is run currently but planning a more integrated system from the beginning. The team\'s mission is to provide systems that aid operations by displaying telemetry in an easy to understand way. We use user-centered design as the user experience is the most important feature in the project. M2020 has very ambitious goals for receiving telemetry, evaluating and creating a plan for the next Sol. Flexibility and Customization of dashboards are very important for our users. The projectwas developed initially using Polymer to create a library of web components that can be easily interchanged with other systems. Nevertheless, the team migrated the components to React since the use of Redux provided immense value to the rapid development of the system.'
+              image: 'assets/projects/images/cascade.png',
+              description: 'Customizable Application for SpaceCraft Assessment and Data Exploration. The Mars 2020 mission is heavily based on MSL, better known as Curiosity. The team learned a lot from MSL\'s ground systems and the premise of the Engineering Analysis Subsystem (EAS) Team is to apply all that knowledge to how operations is run currently but planning a more integrated system from the beginning. The team\'s mission is to provide systems that aid operations by displaying telemetry in an easy to understand way. We use user-centered design as the user experience is the most important feature in the project. M2020 has very ambitious goals for receiving telemetry, evaluating and creating a plan for the next Sol. Flexibility and Customization of dashboards are very important for our users. The projectwas developed initially using Polymer to create a library of web components that can be easily interchanged with other systems. Nevertheless, the team migrated the components to React since the use of Redux provided immense value to the rapid development of the system.'
             },
             {
-              name: 'Mission Planning, Sequencing and Analysis',
+              name: 'Project Aerie',
               company: 'NASA/Jet Propulsion Laboratory',
               avatar: 'assets/projects/avatar/nasa.jpg',
-              image: '',
-              description: ''
+              image: 'assets/projects/images/raven.png',
+              description: 'Architecting a component-based system for science and mission planning, sequencing, commanding, generation of products and analysis od telemetry for the Advanced Multi-Mission Operating Systems (AMMOS) Program Office. Managed the Mission Planning, Sequencing and Analysis Team that creates software, not just for space exploration projects in the Jet Propulsion Laboratory (JPL), but for other NASA centers. The Aerie architecture is composed of microservices developed mainly in Java with Spring Boot and frontend components developed using Angular 7. The system is designed to be configured and distributed based on a per mission needs, spanning from Cubesats to flag-ship missions, like Europa Clipper. '
             }];
+
+  readMore = true;
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  readmore(description) {
+
+    let words: Array<string> = description.split(' ');
+
+    return "something " + words;
   }
 
 }

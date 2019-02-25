@@ -1,0 +1,18 @@
+.more {
+  font-family: 'Calibri', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.morelink {
+  font-family: 'Calibri', sans-serif;
+  color: orange;
+}
+
+.morelink:hover {
+  font-family: 'Calibri', sans-serif;
+  color: orange;
+  font-size: large;
+  cursor: pointer;
+}
